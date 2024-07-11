@@ -4,11 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Video</title>
-  <!-- <link rel="stylesheet" href="style.css"> -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="main.css">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 <body class="p-10">
-  <h1 class="text-2xl font-bold">fetching Data from Rapid Api</h1>
-  <script type="module" src="main.js"></script>
+  <div class="navbar">
+  <h1 class="text-2xl font-bold">Youtube Video Player</h1>
+  <input class="border-2 px-2 rounded-md" type="text" placeholder="search Name">
+  <button class="bg-green-600 text-white px-2 py-1 rounded-lg" type="button" >Search</button>
+</div>
+<div class="display">
+  <div class="video"></div>
+</div>
+ 
+  <script src="object.js"></script>  
+  <script src="main.js"></script>
 </body>
 </html>

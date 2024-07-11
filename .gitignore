@@ -1,2 +1,6 @@
 apikey.js
 .vscode
+
+node_modules
+
+tailwind.config.js

@@ -1,0 +1,77 @@
+//  import { apiKey } from "./apikey.js";
+
+// import { videos } from "./object.js";
+// import { channels } from "./object.js";
+// const userInput = document.querySelector('input');
+// const btn = document.querySelector('button');
+
+// let output = '';
+// let artises = '';
+
+
+// async function getData() {
+
+// 	artises  = userInput.value
+// 	const url = `https://youtube-search-results.p.rapidapi.com/youtube-search/?q=${artises}`;
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': `${apiKey}`,
+// 		'X-RapidAPI-Host': 'youtube-search-results.p.rapidapi.com'
+// 	}
+// };
+
+// try {
+// 	const response = await fetch(url, options);
+// 	const result = await response.json();
+// 	// console.log(result);
+// 	// console.log(video.link)
+// 	const items = result.videos;
+// 	 items.forEach((item) =>{
+		
+//     const video = item
+// 	  output += `<div class="product-container">
+// 		<div>
+// 		<iframe src="https://www.youtube.com/embed/${video.id}" height="200px" width="300px"></iframe>
+// 		</div>
+//     <div>
+//     <a class="link" target="_blank" href=${video.link}>
+
+//    ${video.title > 20? video.title.slice(0, 20) + "...." : video.title}</a>
+// 	  </div></div>`
+// 		console.log(video.link)
+// 		console.log(video.id)
+// 	});
+	
+// 	document.querySelector('.result').innerHTML = output;
+// 	// article.title.length > 30? articl+ "...." : article.title;e.title.slice(0, 30) 
+// 	// // console.log(result.status);
+// 	// // console.log(result.videos[0]);
+// 	// // console.log(result.videos[0].link);
+// 	// // console.log(result.videos[1].link);
+// 	// // console.log(result.videos[2].link);
+// 	// // console.log(result.videos.link);
+// 	// // console.log(result)
+// } catch (error) {
+// 	console.error(error);
+// }
+// 	userInput.value =  '';
+// }
+
+// btn.addEventListener('click', getData)
+// const linkButton = document.querySelector('.linkvideo');
+// linkButton.addEventListener('click', myVideo)
+
+
+//  function myVideo(videosId) {
+// 	let  linkVideo ;
+// 	videos.forEach((video) => {
+// 		linkVideo = video;
+
+// 		if(videosId === video.id)  { 
+        
+
+// 		}
+// 		console.log(linkVideo)
+// 	})
+// };
