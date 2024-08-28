@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details</title>
+    <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body id="detail">
+    <nav><a href="index.html">&larr;</a></nav>
     <div class="item-details">
+        <iframe src="${urlVideo}?autoplay=1" id="iframe" allowfullscreen=""></iframe>
         <div id="item-video"></div>
-        <div id="item-image"></div>
+        <div id="image"></div>
         <p id="item-title"></p>
         <h2 id="item-name"></h2>
         <p id="item-views"></p>
@@ -20,19 +23,21 @@
             const name = urlParams.get('name');
             const title = urlParams.get('title');
             const views = urlParams.get('views');
-            const urlImage = urlParams.get('urlImage');
+            const urlImage = urlParams.get('image');
             const urlVideo = urlParams.get('video');
             document.getElementById('item-name').innerText = name;
             document.getElementById('item-title').innerText = title;
             document.getElementById('item-views').innerText = views;
-            const img = document.createElement("img");
-            img.src = urlImage;
-            const src = document.getElementById("item-image");
-            src.appendChild(img);
             const videos = document.createElement('iframe');
-            iframe.src = urlVideo
           const movie = document.getElementById('item-video');
-            src.appendChild(iframe)
+          const src = document.getElementById("image");
+            iframe.src = urlVideo
+            src.appendChild(iframe);
+            const img = document.createElement("img");
+           
+            img.src = urlImage;
+            src.appendChild(img);
+            console.log(urlParams)
     
         });
     </script>
